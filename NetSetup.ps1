@@ -40,3 +40,7 @@ If ($DoneSth) {
         Write-Host "Gateway: " $Interface.
     }
 }
+
+if (Resolve-DnsName -Name google.com -NoHostsFile -DnsOnly) {
+    Write-Host "It works now :)"
+}
